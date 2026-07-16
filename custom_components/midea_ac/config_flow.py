@@ -232,7 +232,29 @@ class MideaConfigFlow(ConfigFlow, domain=DOMAIN):
                 device.type in [DeviceType.AIR_CONDITIONER, DeviceType.COMMERCIAL_AC])
         ]
         _ALREADY_CONFIGURED_LABEL = {
+            "bg": "Вече конфигурирани в тази мрежа",
+            "ca": "Ja configurats en aquesta xarxa",
+            "cs": "Již nakonfigurováno v této síti",
             "de": "Bereits im Netzwerk konfiguriert",
+            "es": "Ya configurados en esta red",
+            "eu": "Sare honetan jadanik konfiguratuta",
+            "fr": "Déjà configuré sur ce réseau",
+            "hr": "Već konfigurirano na ovoj mreži",
+            "hu": "Már konfigurálva ezen a hálózaton",
+            "it": "Già configurato su questa rete",
+            "ko": "이 네트워크에 이미 구성됨",
+            "mk": "Веќе конфигурирано на оваа мрежа",
+            "nb": "Allerede konfigurert på dette nettverket",
+            "nl": "Al geconfigureerd op dit netwerk",
+            "pl": "Już skonfigurowane w tej sieci",
+            "pt": "Já configurado nesta rede",
+            "ro": "Deja configurat în această rețea",
+            "ru": "Уже настроено в этой сети",
+            "sk": "Už nakonfigurované v tejto sieti",
+            "sl": "Že konfigurirano v tem omrežju",
+            "tr": "Bu ağda zaten yapılandırılmış",
+            "uk": "Вже налаштовано в цій мережі",
+            "zh": "此网络中已配置",
         }
         already_configured_label = _ALREADY_CONFIGURED_LABEL.get(
             self.hass.config.language[:2].lower(),
