@@ -20,7 +20,7 @@
         }
       },
       "pick_device": {
-        "description": "Device(s) found. Select the device to add.",
+        "description": "Device(s) found. Select the device to add.{already_configured}",
         "data": {
           "id": "Device"
         }
@@ -66,7 +66,7 @@
       "already_configured": "The device has already been configured.",
       "cannot_connect": "Device connection could not be made.",
       "cloud_connection_failed": "Cloud connection could not be made.",
-      "no_devices_found": "No supported devices found on the network.",
+      "no_devices_found": "No new devices found on the network.{already_configured}",
       "reconfigure_successful": "Device successfully reconfigured."
     },
     "error": {
